@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/>
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/index2.css">
+</head>
+<body>
+    <div class="container">
+        <ul class="buyCar-box">
+            <li>
+                <div class="img-check-box f_left"></div>
+                <div class="shop-box f_left">
+                    <div class="img-box f_left"><img src="images/1.jpg" alt=""></div>
+                    <div class="shop-info-box f_right">
+                        <p>荣耀 畅玩5C 全网通 高配版 3GB 32GB 落日金 移动联通电信4G手机 双卡双待 前置1300万像素</p>
+                        <p class="shop-price-box">￥1199.00</p>
+                        <div class="option-box">
+                            <p class="change-num-box f_left">
+                                <span class="btn-prev">-</span>
+                                <span class="change-num">1</span>
+                                <span class="btn-next">+</span>
+                            </p>
+                            <p class="delete-box f_right">
+                                <span class="btn-delete-up"></span>
+                                <span class="btn-delete-down"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="img-check-box f_left"></div>
+                <div class="shop-box f_left">
+                    <div class="img-box f_left"><img src="images/2.jpg" alt=""></div>
+                    <div class="shop-info-box f_right">
+                        <p>OPPO R9s 全网通4G 64G 双卡双待手机 玫瑰金</p>
+                        <p class="shop-price-box">￥2499.00</p>
+                        <div class="option-box">
+                            <p class="change-num-box f_left">
+                                <span class="btn-prev">-</span>
+                                <span class="change-num">1</span>
+                                <span class="btn-next">+</span>
+                            </p>
+                            <p class="delete-box f_right">
+                                <span class="btn-delete-up"></span>
+                                <span class="btn-delete-down"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="img-check-box f_left"></div>
+                <div class="shop-box f_left">
+                    <div class="img-box f_left"><img src="images/3.png" alt=""></div>
+                    <div class="shop-info-box f_right">
+                        <p>vivo X9 全网通 4GB 64GB 移动联通电信4G手机 双卡双待 金色</p>
+                        <p class="shop-price-box">￥2799.00</p>
+                        <div class="option-box">
+                            <p class="change-num-box f_left">
+                                <span class="btn-prev">-</span>
+                                <span class="change-num">1</span>
+                                <span class="btn-next">+</span>
+                            </p>
+                            <p class="delete-box f_right">
+                                <span class="btn-delete-up"></span>
+                                <span class="btn-delete-down"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+<div class="deletModal">
+    <div class="modalDialog">
+        <div class="content">
+            <p>你确定删除该商品吗?</p>
+        </div>
+        <div class="modal-contral-box">
+            <span id="ok" class="f_left">确定</span>
+            <span id="cancel" class="f_right">取消</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/zepto.js"></script>
+<script type="text/javascript">
+    $("#cancel").tap(function(){
+        $(".deletModal").hide();
+    });
+    $(".delete-box").tap(function(){
+        $(".deletModal").show();
+        $this=$(this);
+        $("#ok").on("click",function(){
+            $this.parents("li").remove();
+            $(".deletModal").hide();
+        });
+    });
+
+</script>
+</body>
+</html>

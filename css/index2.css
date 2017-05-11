@@ -1,0 +1,122 @@
+*{margin:0px;padding:0px;}
+ul{list-style: none;}
+.f_left{float: left;}
+.f_right{float:right;}
+.container{
+    width:100%;
+    height:100%;
+    font-size: 0.81rem;
+    background-color: #f5f5f5;
+}
+.buyCar-box{width: 100%;}
+.buyCar-box li{
+    width: 100%;
+    overflow: hidden;
+    padding-top:1em;
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+}
+.img-check-box{
+    padding:1em 2.2em 2em 1em;
+    background: url("../images/shop-icon.png") 0.5em 0em no-repeat;
+}
+.shop-box{
+    width:88%;
+}
+.shop-box p{line-height: 1rem;padding: 0.5em 0em;}
+.img-box{
+    width: 38%;
+}
+.shop-info-box{
+    width: 60%;
+}
+
+.shop-price-box{color:red;font-size: 1rem;font-weight: bold;}
+.change-num-box{
+    width:8.1rem;
+    height: 1.0rem;
+    border:0.1rem solid #cccccc ;
+    border-radius: 2px;
+}
+.change-num-box span{
+    width: 2.65rem;
+    height: 1.8rem;
+    display: block;
+    float: left;
+    margin-top:-0.4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+.change-num-box span:first-of-type{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    border-right: 0.1rem solid #cccccc;
+}
+.change-num-box span:last-of-type{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    border-left: 0.1rem solid #cccccc;
+}
+.delete-box{
+    width: 20px;
+    height: 20px;
+}
+.delete-box span{
+    display: block;
+}
+.delete-box .btn-delete-up{
+    width: 1.3rem;
+    height: 0.4rem;
+    background: url("../images/delete_up.png") no-repeat;
+    background-size: 20px 8px ;
+}
+.delete-box .btn-delete-down{
+    width: 2rem;
+    height: 1rem;
+    background: url("../images/delete_down.png") no-repeat;
+    background-size: 20px 18px;
+}
+
+.deletModal{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0px;
+    z-index: 999;
+    display: none;
+    background: rgba(0,0,0,0.5);
+}
+.modalDialog{
+    width:60%;
+    position: relative;
+    top:30%;
+    left: 20%;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.content{
+    padding: 2rem 0px;
+    font-size: 1.2rem;
+    color:#131313;
+    border-bottom: 1px solid #cccccc;
+}
+.modal-contral-box span{
+    display: block;
+    padding:0.5rem 2.5rem;
+    margin-top: 1rem;
+    border-radius:5px;
+    border: 1px solid #cccccc;
+}
+
+
+
+
+
+
+
+
+
